@@ -1,7 +1,7 @@
-def queen_attack(x1,y1,x2,y2)
-  if x2 === x1 || y1 === y2
+def queen_attack(queen,pawn)
+  if queen[0] === pawn[0] || queen[1] === pawn[1]
     return true
-  elsif ((x2-x1)/(y2-y1)) === 1 || ((x2-x1)/(y2-y1)) === -1
+  elsif ((queen[0]-pawn[0])/(queen[1]-pawn[1])) === 1 || ((queen[0]-pawn[0])/(queen[1]-pawn[1])) === -1
     return true
   else
     return false
